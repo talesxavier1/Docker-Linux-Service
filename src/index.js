@@ -8,6 +8,7 @@ var containers;
 
 const main = async () => {
 
+
   while (true) {
     const dockerConf = (() => {
       let result = fs.readFileSync("./dockerConf.json");
