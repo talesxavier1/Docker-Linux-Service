@@ -1,0 +1,8 @@
+{
+    "globalConf": [
+        {
+            "repository": "tallesxavier1/singularchatapis",
+            "startPort": 5000
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "globalConf": [
+        {
+            "repository": "tallesxavier1/singularchatapis",
+            "startPort": 5000,
+            "currentImageAndContainer": {
+                "image": {
+                    "ID": "",
+                    "Digest": "",
+                    "createDataTime": ""
+                },
+                "container": {
+                    "ID": "",
+                    "createDataTime": ""
+                }
+            },
+            "lestCheckDataTime": "",
+            "lastUpdateDataTime": "",
+            "digestsHistoric": []
+        }
+    ],
+    "__a": {
+        "repository": "dotnetcoreservices/ecommerce-catalog",
+        "startPort": 5001,
+        "currentDigest": "",
+        "digests": [],
+        "lastupdate": "",
+        "log": true
+    }
+}
