@@ -8,6 +8,7 @@ var containers;
 
 const main = async () => {
 
+
   while (true) {
     const dockerConf = (() => {
       const filePath = path.join(__dirname, 'dockerConf.json');
