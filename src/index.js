@@ -1,16 +1,18 @@
 
 const fs = require("fs");
 const ShellComand = require("./ShellComand.js");
-
+const path = require("path")
 
 var imagesDigests;
 var containers;
 
 const main = async () => {
 
+
   while (true) {
     const dockerConf = (() => {
-      let result = fs.readFileSync("./dockerConf.json");
+      const filePath = path.join(__dirname, 'dockerConf.json');
+      let result = fs.readFileSync(filePath);
       return JSON.parse(result);
     })();
 
