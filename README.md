@@ -5,6 +5,7 @@
 
 ------------
 <h4>Ferramentas utilizadas:</h4>
+
 -  [VMware Workstation 17](https://www.vmware.com/br/products/workstation-player/workstation-player-evaluation.html "VMware Workstation 17")
 -  [CentOS Stream 8](https://www.centos.org/centos-stream/ "CentOS Stream 8")
 -  [CentOS 7](https://www.centos.org/download/ "CentOS Stream 8")
