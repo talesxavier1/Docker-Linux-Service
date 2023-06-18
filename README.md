@@ -1,19 +1,20 @@
 <h1>Docker Linux Service</h1>
 
-<h4>Objetivo</h4>
-<p>Fazer um script que atualize as imagens e os containers assim que for identificada uma alteração no repositório do Docker Hub.</p>
+<h3>Objetivo:</h3>
+Fazer um script que atualize as imagens e os containers assim que for identificada uma alteração no repositório do Docker Hub.
 
 ------------
-<h4>Ferramentas utilizadas:</h4>
+<h3>Ferramentas utilizadas:</h3>
 
 -  [VMware Workstation 17](https://www.vmware.com/br/products/workstation-player/workstation-player-evaluation.html "VMware Workstation 17")
 -  [CentOS Stream 8](https://www.centos.org/centos-stream/ "CentOS Stream 8")
 -  [CentOS 7](https://www.centos.org/download/ "CentOS Stream 8")
 -  [Visual Studio Code](https://code.visualstudio.com/ "Visual Studio Code")
-
+-  [Node.js 18.16.0](https://nodejs.org/en "Node.js 18.16.0")
+-  [JavaScript ES6](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript "Node.js 18.16.0")
 ------------
 
-<h4>Funcionamento:</h4>
+<h3>Funcionamento:</h3>
 
 - **1.** Busca o arquivo de configurações.
 - **2.** Busca todos os containers do ambiente.
@@ -27,3 +28,4 @@
   - **5.5** - Deletar todas as imagens filtradas no **5.1**, encerra todos os containers filtrados no 5.2 e deleta todos os container filtrados no **5.2**.
   - **5.6** - Buscar a imagem com base no digest retornado do **5.3**.
   - **5.7** - Executar  e gerar o container da imagem obtida no **5.6** utilizando a porta definida no arquivo de configuração.
+- **6** - Aguarde 1 minuto e retorne para o item 1. 
