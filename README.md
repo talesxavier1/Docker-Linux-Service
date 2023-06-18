@@ -1,7 +1,7 @@
 <h1>Docker Linux Service</h1>
 
 <h3>Objetivo:</h3>
-Fazer um script que atualize as imagens e os containers assim que for identificada uma alteração no repositório do Docker Hub.
+Criar um Serviço Linux que utilize o Docker CLI para atualizar as imagens e os containers do ambiente assim que for identificada uma alteração no Docker Hub.
 
 ------------
 <h3>Ferramentas utilizadas:</h3>
