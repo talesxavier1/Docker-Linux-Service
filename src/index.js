@@ -8,7 +8,6 @@ var containers;
 
 const main = async () => {
 
-
   while (true) {
     const dockerConf = (() => {
       const filePath = path.join(__dirname, 'dockerConf.json');
@@ -18,6 +17,17 @@ const main = async () => {
 
     imagesDigests = await getDigests();
     containers = await getContainers();
+
+    /* -------- Start all containers -------- */
+    if (containers && Array.isArray(containers)) {
+      for (const CONTAINER of containers) {
+        if (CONTAINER.State != "running") {
+          await ShellComand.executeShellComand(`docker start ${CONTAINER.ID}`);
+        }
+      }
+    }
+    /* -------------------------------------- */
+
     for (let CONF of dockerConf.globalConf) {
       let imagesAndContainer = (() => {
         let repositoryImages = imagesDigests.filter(VALUE => VALUE.Repository == CONF.repository);
@@ -94,7 +104,6 @@ const getContainers = async () => {
 
 const sleep = async (time) => {
   return new Promise(resolve => setTimeout(resolve, time));
-
 }
 
 main();
