@@ -19,7 +19,7 @@ Criar um Serviço Linux que utilize o Docker CLI para atualizar as imagens e os 
 - **1.** Busca o arquivo de configurações.
 - **2.** Busca todos os containers do ambiente.
 - **3.** Busca todas a imagens do ambiente.
-- **4.** Para cada container encontrado no item **2.**, verificar se o status é diferente de 'runing'. Caso verdadeiro, ele deve ser reiniciado.
+- **4.** Para cada container encontrado no item **2**, verificar se o status é diferente de 'runing'. Caso verdadeiro, ele deve ser reiniciado.
 - **5.** Para cada linha de configuração, faça o item **6.**
 - **6**
   - **6.1** - Filtrar e armazenar na memória todas as imagens da linha de configuração.
