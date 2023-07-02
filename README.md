@@ -19,13 +19,14 @@ Criar um Serviço Linux que utilize o Docker CLI para atualizar as imagens e os 
 - **1.** Busca o arquivo de configurações.
 - **2.** Busca todos os containers do ambiente.
 - **3.** Busca todas a imagens do ambiente.
-- **4.** Para cada linha de configuração, faça o item **5.**
-- **5**
-  - **5.1** - Filtrar e armazenar na memória todas as imagens da linha de configuração.
-  - **5.2** - Filtra e armazena na memória todos os containers das imagens do  **5.1.**
-  - **5.3** - Efetuar o pull no repositório da linha de configuração e armazenar na memória o digest retornado.
-  - **5.4** - Procurar nas imagens filtradas do **5.1** uma imagem com o digest igual ao retornado pelo pull. Se hover imagem com o mesmo digest, passa para próxima linha de configuração.
-  - **5.5** - Deletar todas as imagens filtradas no **5.1**, encerra todos os containers filtrados no 5.2 e deleta todos os container filtrados no **5.2**.
-  - **5.6** - Buscar a imagem com base no digest retornado do **5.3**.
-  - **5.7** - Executar  e gerar o container da imagem obtida no **5.6** utilizando a porta definida no arquivo de configuração.
-- **6** - Aguarde 1 minuto e retorne para o item 1. 
+- **4.** Para cada container encontrado no item **2**, verificar se o status é diferente de 'runing'. Caso verdadeiro, ele deve ser reiniciado.
+- **5.** Para cada linha de configuração, faça o item **6.**
+- **6**
+  - **6.1** - Filtrar e armazenar na memória todas as imagens da linha de configuração.
+  - **6.2** - Filtra e armazena na memória todos os containers das imagens do  **6.1.**
+  - **6.3** - Efetuar o pull no repositório da linha de configuração e armazenar na memória o digest retornado.
+  - **6.4** - Procurar nas imagens filtradas do **6.1** uma imagem com o digest igual ao retornado pelo pull. Se hover imagem com o mesmo digest, passa para próxima linha de configuração.
+  - **6.5** - Deletar todas as imagens filtradas no **6.1**, encerra todos os containers filtrados no **6.2** e deleta todos os container filtrados no **6.2**.
+  - **6.6** - Buscar a imagem com base no digest retornado do **6.3**.
+  - **6.7** - Executar e gerar o container da imagem obtida no **6.6** utilizando a porta definida no arquivo de configuração.
+- **7** - Aguarde 1 minuto e retorne para o item 1. 
